@@ -44,7 +44,7 @@
 					<?php foreach ($cvs as $cv): ?>
 						<article class="thumb" style="background-color:<?= $colors[array_rand($colors)] ?>">
 							<h2><?= $cv ?></h2>
-							<!-- <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a> -->
+							<a href="cv/templates/<?= $cv ?>" class="image"><img src="cv/templates/"<?= $cv ?>"/"<?= $cv ?>".jpg" alt="" /></a>
 						</article>
 					<?php endforeach; ?>
 				</div>
@@ -83,7 +83,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<!-- <script src="assets/js/main.js"></script> -->
 
 	</body>
 </html>
