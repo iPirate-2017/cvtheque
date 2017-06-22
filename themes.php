@@ -34,7 +34,7 @@
 						<h1><strong>CVthèque</strong> IPI Réunion</h1>
 						<nav>
 							<ul>
-								<li><a href="#footer" class="button" style="margin-right: 20px">Thèmes</a></li>
+								<li><a href="index.php" class="button" style="margin-right: 20px">Accueil</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -42,9 +42,9 @@
 				<!-- Main -->
 				<div id="main">
 					<?php foreach ($cvs as $cv): ?>
-						<article class="thumb" style="background-color:<?= $colors[array_rand($colors)] ?>">
+						<article class="thumb">
 							<h2><?= $cv ?></h2>
-							<a href="cv/templates/<?= $cv ?>" class="image"><img src="cv/templates/"<?= $cv ?>"/"<?= $cv ?>".jpg" alt="" /></a>
+							<a href="cv/templates/<?= $cv ?>" class="image"><img style="margin:auto; display:block; width:100%; height:100%" src="cv/templates/<?= $cv ?>/background/<?= $cv ?>.png" alt="" /></a>
 						</article>
 					<?php endforeach; ?>
 				</div>
