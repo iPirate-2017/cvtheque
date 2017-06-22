@@ -39,7 +39,7 @@
 						<h1><strong>CVthèque</strong> IPI Réunion</h1>
 						<nav>
 							<ul>
-								<li><a href="#footer" class="button" style="margin-right: 20px">Thèmes</a></li>
+								<li><a href="themes.php" class="button" style="margin-right: 20px">Thèmes</a></li>
 							</ul>
 						</nav>
 					</header>
