@@ -1,11 +1,10 @@
 <?php
-	$dir = "cv/";
+	$dir = "cv/custom/";
 	$cvs = [];
 	if (is_dir($dir)) {
 		if ($dh = opendir($dir)) {
 			while (($iteration = readdir($dh)) !== false) {
-				if(is_dir($iteration)) {
-					var_dump($iteration);
+				if(!is_file($iteration) && $iteration != "." && $iteration != "..") {
 					$cvs[] = $iteration;
 				}
 			}
@@ -41,13 +40,14 @@
 					</header>
 
 				<!-- Main -->
+				<?php foreach ($cvs as $cv): ?>
 					<div id="main">
 						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<!-- <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a> -->
+							<h1><?= $cv ?></h1>
 						</article>
 					</div>
+				<?php endforeach; ?>
 
 				<!-- Footer -->
 					<footer id="footer" class="panel">
@@ -72,26 +72,6 @@
 									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
 								</p>
 							</div>
-							<!-- <div>
-								<section>
-									<h2>Get in touch</h2>
-									<form method="post" action="#">
-										<div class="field half first">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="text" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-							</div> -->
 						</div>
 					</footer>
 
