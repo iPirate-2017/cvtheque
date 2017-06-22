@@ -47,39 +47,15 @@
 				<!-- Main -->
 				<div id="main">
 					<?php foreach ($cvs as $cv): ?>
-						<article class="thumb" style="background-color:<?= $colors[array_rand($colors)] ?>">
-							<h2><?= $cv ?></h2>
-							<!-- <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a> -->
-						</article>
+						<a href="cv/custom/<?= $cv ?>">
+							<article class="thumb" style="background-color:<?= $colors[array_rand($colors)] ?>">
+								<a href="cv/custom/<?= $cv ?>/" class="image"></a>
+								<h2><?= $cv ?></h2>
+								<!-- <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a> -->
+							</article>
+						</a>
 					<?php endforeach; ?>
 				</div>
-
-				<!-- Footer -->
-					<!-- <footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-								</section>
-								<section>
-									<h2>Follow me on ...</h2>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</section>
-								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p>
-							</div>
-						</div>
-					</footer> -->
-
 			</div>
 
 		<!-- Scripts -->
@@ -87,8 +63,5 @@
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
