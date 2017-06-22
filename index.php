@@ -1,4 +1,5 @@
 <?php
+	$colors = ["#1abc9c", "#e67e22", "#8e44ad", "#f39c12", "#2ecc71", "#34495e"];
 	$dir = "cv/custom/";
 	$cvs = [];
 	if (is_dir($dir)) {
@@ -40,14 +41,14 @@
 					</header>
 
 				<!-- Main -->
-				<?php foreach ($cvs as $cv): ?>
-					<div id="main">
-						<article class="thumb">
+				<div id="main">
+					<?php foreach ($cvs as $cv): ?>
+						<article class="thumb" style="background-color:<?= $colors[array_rand($colors)] ?>">
+							<h2><?= $cv ?></h2>
 							<!-- <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a> -->
-							<h1><?= $cv ?></h1>
 						</article>
-					</div>
-				<?php endforeach; ?>
+					<?php endforeach; ?>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer" class="panel">
